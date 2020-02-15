@@ -178,7 +178,7 @@ func (c *Captcha) CreateCaptchaData() (string, string) {
 	value, err := c.CreateCaptcha()
 	if err != nil {
 	   logs.Error("Create Captcha Error:", err)
-	   return ""
+	   return "",""
 	}
 	return fmt.Sprintf("%s%s.png?reload=",c.URLPrefix,value) , value
 }
