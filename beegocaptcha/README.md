@@ -47,9 +47,9 @@ func (c *Captcha) CreateCaptchaData() (string, string) {
 类似这样用 建一个接口直接返回好了
 func (this *MainController) GetCaptchaData() {
 	data := make(map[string]string)
-	id,path := cpt.CreateCaptchaData()
-	data["captchaId"] = id
-	data["srcPath"] = path
+	srcPath,captchaId := cpt.CreateCaptchaData()
+	data["captchaId"] = captchaId
+	data["srcPath"] = srcPath
 	this.Data["json"] = data
 	this.ServeJSON()
 }
