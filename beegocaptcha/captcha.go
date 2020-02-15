@@ -56,7 +56,7 @@
 // 	<input name="captcha" type="text">
 // </form>
 // ```
-package captcha
+package beegocaptcha
 
 import (
 	"fmt"
