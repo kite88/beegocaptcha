@@ -1,4 +1,4 @@
-# Captcha
+# beegoCaptcha接口形式返回
 
 an example for use captcha
 
